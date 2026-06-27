@@ -1,0 +1,614 @@
+[
+	{
+		"example": "The quick brown fox jumps over the lazy dog.",
+		"result": [
+			{
+				"role": "ROOT",
+				"type": "phrase",
+				"pos": "VERB",
+				"content": [
+					{
+						"role": "nsubj",
+						"type": "phrase",
+						"pos": "NOUN",
+						"content": [
+							{
+								"role": "det",
+								"type": "word",
+								"text": "The",
+								"pos": "DET"
+							},
+							{
+								"role": "amod",
+								"type": "word",
+								"text": "quick",
+								"pos": "ADJ"
+							},
+							{
+								"role": "amod",
+								"type": "word",
+								"text": "brown",
+								"pos": "ADJ"
+							},
+							{
+								"role": "head",
+								"type": "word",
+								"text": "fox",
+								"pos": "NOUN"
+							}
+						]
+					},
+					{
+						"role": "head",
+						"type": "word",
+						"text": "jumps",
+						"pos": "VERB"
+					},
+					{
+						"role": "prep",
+						"type": "phrase",
+						"pos": "ADP",
+						"content": [
+							{
+								"role": "head",
+								"type": "word",
+								"text": "over",
+								"pos": "ADP"
+							},
+							{
+								"role": "pobj",
+								"type": "phrase",
+								"pos": "NOUN",
+								"content": [
+									{
+										"role": "det",
+										"type": "word",
+										"text": "the",
+										"pos": "DET"
+									},
+									{
+										"role": "amod",
+										"type": "word",
+										"text": "lazy",
+										"pos": "ADJ"
+									},
+									{
+										"role": "head",
+										"type": "word",
+										"text": "dog",
+										"pos": "NOUN"
+									}
+								]
+							}
+						]
+					},
+					{
+						"role": "punct",
+						"type": "word",
+						"text": ".",
+						"pos": "PUNCT"
+					}
+				]
+			}
+		]
+	},
+	{
+		"example": "Artificial intelligence is transforming the world.",
+		"result": [
+			{
+				"role": "ROOT",
+				"type": "phrase",
+				"pos": "VERB",
+				"content": [
+					{
+						"role": "nsubj",
+						"type": "phrase",
+						"pos": "NOUN",
+						"content": [
+							{
+								"role": "amod",
+								"type": "word",
+								"text": "Artificial",
+								"pos": "ADJ"
+							},
+							{
+								"role": "head",
+								"type": "word",
+								"text": "intelligence",
+								"pos": "NOUN"
+							}
+						]
+					},
+					{
+						"role": "aux",
+						"type": "word",
+						"text": "is",
+						"pos": "AUX"
+					},
+					{
+						"role": "head",
+						"type": "word",
+						"text": "transforming",
+						"pos": "VERB"
+					},
+					{
+						"role": "dobj",
+						"type": "phrase",
+						"pos": "NOUN",
+						"content": [
+							{
+								"role": "det",
+								"type": "word",
+								"text": "the",
+								"pos": "DET"
+							},
+							{
+								"role": "head",
+								"type": "word",
+								"text": "world",
+								"pos": "NOUN"
+							}
+						]
+					},
+					{
+						"role": "punct",
+						"type": "word",
+						"text": ".",
+						"pos": "PUNCT"
+					}
+				]
+			}
+		]
+	},
+	{
+		"example": "I have said that he is going to be late and you didn't listen to me.",
+		"result": [
+			{
+				"role": "ROOT",
+				"type": "phrase",
+				"pos": "VERB",
+				"content": [
+					{
+						"role": "nsubj",
+						"type": "word",
+						"text": "I",
+						"pos": "PRON"
+					},
+					{
+						"role": "aux",
+						"type": "word",
+						"text": "have",
+						"pos": "AUX"
+					},
+					{
+						"role": "head",
+						"type": "word",
+						"text": "said",
+						"pos": "VERB"
+					},
+					{
+						"role": "ccomp",
+						"type": "phrase",
+						"pos": "VERB",
+						"content": [
+							{
+								"role": "mark",
+								"type": "word",
+								"text": "that",
+								"pos": "SCONJ"
+							},
+							{
+								"role": "nsubj",
+								"type": "word",
+								"text": "he",
+								"pos": "PRON"
+							},
+							{
+								"role": "aux",
+								"type": "word",
+								"text": "is",
+								"pos": "AUX"
+							},
+							{
+								"role": "head",
+								"type": "word",
+								"text": "going",
+								"pos": "VERB"
+							},
+							{
+								"role": "xcomp",
+								"type": "phrase",
+								"pos": "AUX",
+								"content": [
+									{
+										"role": "aux",
+										"type": "word",
+										"text": "to",
+										"pos": "PART"
+									},
+									{
+										"role": "head",
+										"type": "word",
+										"text": "be",
+										"pos": "AUX"
+									},
+									{
+										"role": "acomp",
+										"type": "word",
+										"text": "late",
+										"pos": "ADJ"
+									}
+								]
+							}
+						]
+					},
+					{
+						"role": "cc",
+						"type": "word",
+						"text": "and",
+						"pos": "CCONJ"
+					},
+					{
+						"role": "conj",
+						"type": "phrase",
+						"pos": "VERB",
+						"content": [
+							{
+								"role": "nsubj",
+								"type": "word",
+								"text": "you",
+								"pos": "PRON"
+							},
+							{
+								"role": "aux",
+								"type": "word",
+								"text": "did",
+								"pos": "AUX"
+							},
+							{
+								"role": "neg",
+								"type": "word",
+								"text": "n't",
+								"pos": "PART"
+							},
+							{
+								"role": "head",
+								"type": "word",
+								"text": "listen",
+								"pos": "VERB"
+							},
+							{
+								"role": "prep",
+								"type": "phrase",
+								"pos": "ADP",
+								"content": [
+									{
+										"role": "head",
+										"type": "word",
+										"text": "to",
+										"pos": "ADP"
+									},
+									{
+										"role": "pobj",
+										"type": "word",
+										"text": "me",
+										"pos": "PRON"
+									}
+								]
+							},
+							{
+								"role": "punct",
+								"type": "word",
+								"text": ".",
+								"pos": "PUNCT"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"example": "If you are going to the party, please let me know.",
+		"result": [
+			{
+				"role": "ROOT",
+				"type": "phrase",
+				"pos": "VERB",
+				"content": [
+					{
+						"role": "advcl",
+						"type": "phrase",
+						"pos": "VERB",
+						"content": [
+							{
+								"role": "mark",
+								"type": "word",
+								"text": "If",
+								"pos": "SCONJ"
+							},
+							{
+								"role": "nsubj",
+								"type": "word",
+								"text": "you",
+								"pos": "PRON"
+							},
+							{
+								"role": "aux",
+								"type": "word",
+								"text": "are",
+								"pos": "AUX"
+							},
+							{
+								"role": "head",
+								"type": "word",
+								"text": "going",
+								"pos": "VERB"
+							},
+							{
+								"role": "prep",
+								"type": "phrase",
+								"pos": "ADP",
+								"content": [
+									{
+										"role": "head",
+										"type": "word",
+										"text": "to",
+										"pos": "ADP"
+									},
+									{
+										"role": "pobj",
+										"type": "phrase",
+										"pos": "NOUN",
+										"content": [
+											{
+												"role": "det",
+												"type": "word",
+												"text": "the",
+												"pos": "DET"
+											},
+											{
+												"role": "head",
+												"type": "word",
+												"text": "party",
+												"pos": "NOUN"
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"role": "punct",
+						"type": "word",
+						"text": ",",
+						"pos": "PUNCT"
+					},
+					{
+						"role": "intj",
+						"type": "word",
+						"text": "please",
+						"pos": "INTJ"
+					},
+					{
+						"role": "head",
+						"type": "word",
+						"text": "let",
+						"pos": "VERB"
+					},
+					{
+						"role": "ccomp",
+						"type": "phrase",
+						"pos": "VERB",
+						"content": [
+							{
+								"role": "nsubj",
+								"type": "word",
+								"text": "me",
+								"pos": "PRON"
+							},
+							{
+								"role": "head",
+								"type": "word",
+								"text": "know",
+								"pos": "VERB"
+							}
+						]
+					},
+					{
+						"role": "punct",
+						"type": "word",
+						"text": ".",
+						"pos": "PUNCT"
+					}
+				]
+			}
+		]
+	},
+	{
+		"example": "To be or not to be, that is the question.",
+		"result": [
+			{
+				"role": "ROOT",
+				"type": "phrase",
+				"pos": "AUX",
+				"content": [
+					{
+						"role": "advcl",
+						"type": "phrase",
+						"pos": "AUX",
+						"content": [
+							{
+								"role": "aux",
+								"type": "word",
+								"text": "To",
+								"pos": "PART"
+							},
+							{
+								"role": "head",
+								"type": "word",
+								"text": "be",
+								"pos": "AUX"
+							},
+							{
+								"role": "acomp",
+								"type": "phrase",
+								"pos": "AUX",
+								"content": [
+									{
+										"role": "cc",
+										"type": "word",
+										"text": "or",
+										"pos": "CCONJ"
+									},
+									{
+										"role": "neg",
+										"type": "word",
+										"text": "not",
+										"pos": "PART"
+									},
+									{
+										"role": "aux",
+										"type": "word",
+										"text": "to",
+										"pos": "PART"
+									},
+									{
+										"role": "head",
+										"type": "word",
+										"text": "be",
+										"pos": "AUX"
+									}
+								]
+							}
+						]
+					},
+					{
+						"role": "punct",
+						"type": "word",
+						"text": ",",
+						"pos": "PUNCT"
+					},
+					{
+						"role": "nsubj",
+						"type": "word",
+						"text": "that",
+						"pos": "PRON"
+					},
+					{
+						"role": "head",
+						"type": "word",
+						"text": "is",
+						"pos": "AUX"
+					},
+					{
+						"role": "attr",
+						"type": "phrase",
+						"pos": "NOUN",
+						"content": [
+							{
+								"role": "det",
+								"type": "word",
+								"text": "the",
+								"pos": "DET"
+							},
+							{
+								"role": "head",
+								"type": "word",
+								"text": "question",
+								"pos": "NOUN"
+							}
+						]
+					},
+					{
+						"role": "punct",
+						"type": "word",
+						"text": ".",
+						"pos": "PUNCT"
+					}
+				]
+			}
+		]
+	},
+	{
+		"example": "Do you know where the nearest library is?",
+		"result": [
+			{
+				"role": "ROOT",
+				"type": "phrase",
+				"pos": "VERB",
+				"content": [
+					{
+						"role": "aux",
+						"type": "word",
+						"text": "Do",
+						"pos": "AUX"
+					},
+					{
+						"role": "nsubj",
+						"type": "word",
+						"text": "you",
+						"pos": "PRON"
+					},
+					{
+						"role": "head",
+						"type": "word",
+						"text": "know",
+						"pos": "VERB"
+					},
+					{
+						"role": "ccomp",
+						"type": "phrase",
+						"pos": "AUX",
+						"content": [
+							{
+								"role": "advmod",
+								"type": "word",
+								"text": "where",
+								"pos": "SCONJ"
+							},
+							{
+								"role": "nsubj",
+								"type": "phrase",
+								"pos": "NOUN",
+								"content": [
+									{
+										"role": "det",
+										"type": "word",
+										"text": "the",
+										"pos": "DET"
+									},
+									{
+										"role": "amod",
+										"type": "word",
+										"text": "nearest",
+										"pos": "ADJ"
+									},
+									{
+										"role": "head",
+										"type": "word",
+										"text": "library",
+										"pos": "NOUN"
+									}
+								]
+							},
+							{
+								"role": "head",
+								"type": "word",
+								"text": "is",
+								"pos": "AUX"
+							}
+						]
+					},
+					{
+						"role": "punct",
+						"type": "word",
+						"text": "?",
+						"pos": "PUNCT"
+					}
+				]
+			}
+		]
+	}
+]

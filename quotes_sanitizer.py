@@ -1,9 +1,9 @@
 import re
 
 # " surrounded by words/numbers:
-SUSPICIOUS_QUOTE_REGEX = re.compile(r'([\w])["\']([\w])', re.UNICODE)
+SUSPICIOUS_QUOTE_REGEX = re.compile(r'([\w])"([\w])', re.UNICODE)
 # " isolated by 2 space:
-ISOLATED_QUOTE_REGEX = re.compile(r'\s["\']\s')
+ISOLATED_QUOTE_REGEX = re.compile(r'\s"\s')
 
 def check_suspicious_quotes(text: str) -> dict:
 	if SUSPICIOUS_QUOTE_REGEX.search(text):
